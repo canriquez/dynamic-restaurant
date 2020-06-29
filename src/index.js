@@ -4,7 +4,6 @@ console.log("init webpack done")
 
 // Navigation
 
-const navIconElement = document.getElementById('burger-menu')
 const navMenuIcon = new Image();
 navMenuIcon.src = navIcon;
-navIconElement = appendChild(navMenuIcon);
+document.getElementById('burger-menu').appendChild(navMenuIcon);
