@@ -325,3 +325,36 @@ body {
 .menu-cards .dish-card .photo-credits p {
     font-size: 0.5rem;
 }
+
+/* ============ footer ========== */
+
+#page-footer {
+    color: #c0baa2;
+    background-color: #48453c;
+    padding: 20px;
+}
+.footer-wrap {
+    max-width: 1140px;
+    padding: 0 100px;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.col-wrap p {
+    font-family: futura-bold, sans-serif;
+    font-size: 0.9rem;
+    min-width: 70px;
+    justify-content: center;
+}
+
+.col-wrap ul {
+    padding: 0;
+}
+
+.col-wrap ul li {
+    font-family: futura-light, sans-serif;
+    font-size: 0.8rem;
+    list-style: none;
+    line-height: 1.5rem;
+}
