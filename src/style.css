@@ -96,6 +96,22 @@ body {
     opacity: 0.65;
 }
 
+.btn-dish {
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    width: 85%;
+    margin: 0 15px 10px 15px;
+}
+
+.btn-dish:hover,
+.btn-dish:focus {
+    color: #fff;
+    background-color: #d40028;
+}
+
 .btn-action {
     color: #fff;
     background-color: #d40028;
@@ -130,11 +146,31 @@ body {
 
 #hero-image img {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     object-fit: cover;
     transition: opacity 1s ease-in-out;
     opacity: 0.9;
     transform: scaleX(-1);
+}
+.photo-credits {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.photo-credits p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: gray;
+    margin: 3px;
+}
+.photo-credits a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: gray;
+    margin: 3px;
 }
 
 .brand-container {
@@ -162,7 +198,6 @@ body {
 .brand-mission,
 .action {
     width: 100%;
-    /* padding: 10px 20px; */
     text-align: center;
 }
 
@@ -205,4 +240,78 @@ body {
     font-size: 1.5vw;
     line-height: 1.8rem;
     color: #48453c;
+}
+
+/* ============== menu cards ============= */
+
+.menu-card {
+    flex-wrap: wrap;
+}
+
+.dish-card {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 20px;
+    width: 25%;
+    height: 45vh;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.dish-image {
+    height: 40%;
+    overflow: hidden;
+}
+
+.dish-image img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+}
+
+.food {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    /*     background-color: rgba(255, 255, 255, 0.6);
+    color: transparent; */
+    background-color: #d40028;
+}
+
+.food p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: #fff;
+    margin: 3px;
+}
+
+.dish-description {
+    color: #48453c;
+    margin: 0;
+    text-align: center;
+}
+
+.dish-description h1 {
+    margin: 0;
+}
+.dish-description p {
+    font-size: 0.7rem;
+    margin: 10px 0;
+    padding: 0 15px;
+    line-height: 1.5rem;
+}
+
+.menu-cards .dish-card .photo-credits {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    height: 10px;
+}
+.menu-cards .dish-card .photo-credits a,
+.menu-cards .dish-card .photo-credits p {
+    font-size: 0.5rem;
 }
