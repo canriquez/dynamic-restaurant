@@ -1,26 +1,85 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
+    background-color: #f8f9fa;
+}
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navigation {
     background-color: white;
+    position: fixed;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .nav-wrap {
     max-width: 1100px;
-    display: flex;
     max-width: 1140px;
-    height: 60px;
-    align-items: center;
-    justify-content: space-between;
+    height: 72px;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 12px 15px;
     margin-right: auto;
     margin-left: auto;
 }
 
 #burger-menu img {
-    width: 24px;
+    width: 36px;
     height: 24px;
 }
 
-#bm1 path {
-    fill: red;
+#brand-nav {
+    padding-top: 24px;
+    padding-left: 36px;
+}
+
+#brand-nav img {
+    width: 296px;
+}
+#global img {
+    width: 30px;
+    padding-right: 0px;
+}
+
+/* Main Header */
+
+#main {
+    max-width: 1160px;
+    padding: 72px 15px 0px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+}
+
+#main-section {
+    position: relative;
+}
+
+#hero-image img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 0.9;
+}
+
+.brand-container {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    width: 30%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
 }
