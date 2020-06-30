@@ -244,8 +244,10 @@ body {
 
 /* ============== menu cards ============= */
 
-.menu-card {
+.menu-cards {
+    padding-top: 10vh;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .dish-card {
@@ -253,9 +255,10 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 20px;
-    width: 25%;
+    margin: 40px 10px;
+    width: 22%;
     height: 45vh;
+    min-width: 248px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
@@ -269,7 +272,9 @@ body {
 .dish-image img {
     position: relative;
     object-fit: cover;
+    object-position: 50% 50%;
     width: 100%;
+    height: 100%;
 }
 
 .food {
@@ -296,7 +301,12 @@ body {
 }
 
 .dish-description h1 {
-    margin: 0;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+.dish-description p {
+    text-transform: capitalize;
 }
 .dish-description p {
     font-size: 0.7rem;
