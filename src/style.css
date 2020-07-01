@@ -100,6 +100,26 @@ body {
     padding-right: 0px;
 }
 
+.action-wrap {
+    width: 40%;
+}
+
+.action-wrap p {
+    font-family: futura-bold, sans-serif;
+    font-size: 1.5rem;
+    color: #d40028;
+    margin: 0;
+    text-transform: uppercase;
+}
+.action-wrap span {
+    font-family: futura-bold, sans-serif;
+    font-size: 1rem;
+    padding: 0 5px;
+    margin-left: 5px;
+    color: #fff;
+    background-color: #d40028;
+    border-radius: 100%;
+}
 /* =======  Buttons  =========   */
 .btn {
     display: block;
