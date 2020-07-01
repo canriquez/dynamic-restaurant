@@ -44,6 +44,14 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
 /* ================ section ================ */
 
 .section-title {
@@ -101,7 +109,7 @@ body {
 }
 
 .action-wrap {
-    width: 40%;
+    width: 45%;
 }
 
 .action-wrap p {
