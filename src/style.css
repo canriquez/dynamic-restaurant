@@ -146,6 +146,17 @@ body {
     background-color: #d40028;
 }
 
+.btn-delete {
+    background-image: url("./icons/delete.svg");
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+    margin: 0 20px;
+    fill: gray !important;
+}
+
 /* =======  Main Header ======   */
 
 #main {
@@ -372,12 +383,15 @@ body {
 }
 
 .quantity p {
+    font-family: futura-bold, sans-serif;
     margin: 0 10px;
+    color: #d40028;
 }
 
 /* ============ Cart display ========== */
 .cart {
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .dish-card-cart {
@@ -385,7 +399,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    margin: 40px 10px;
+    margin: 15px 10px;
     width: 100%;
     height: 15vh;
     min-width: 248px;
@@ -421,7 +435,7 @@ body {
 }
 
 .dish-card-cart .dish-description h1 {
-    font-size: 1.8vw;
+    font-size: 1.6vw;
 }
 .dish-card-cart .dish-description p {
     font-size: 1vw;
@@ -445,6 +459,27 @@ body {
 
 .dish-card-cart button {
     width: 10%;
+}
+
+.cart .total {
+    margin: 0 auto;
+    border-top: 1px solid red;
+    width: 97%;
+    flex-wrap: wrap;
+}
+
+.cart .total p {
+    font-family: futura-bold, sans-serif;
+    font-size: 1.5rem;
+    color: #d40028;
+}
+
+.cart .total button {
+    font-family: futura-bold, sans-serif;
+    font-size: 1.8rem;
+    width: 100%;
+    height: 50px;
+    padding: 0;
 }
 
 /* ============ footer ========== */
