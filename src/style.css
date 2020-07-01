@@ -46,13 +46,14 @@ body {
 }
 /* ================ section ================ */
 
-.menu-cards .section-title {
+.section-title {
     width: 100%;
     padding: 20px 0;
 }
 .section-title h1 {
     font-family: futura-medium, sans-serif;
     text-align: left;
+    align-self: flex-start;
     font-size: 1.4rem;
     margin: 0 10px;
     text-transform: uppercase;
@@ -334,8 +335,9 @@ body {
 }
 
 .dish-description h1 {
-    font-size: 1.4rem;
-    margin: 0 10px;
+    padding-top: 10px;
+    font-size: 1.1rem;
+    margin: 0 5px;
     text-transform: uppercase;
 }
 .dish-description p {
@@ -357,6 +359,92 @@ body {
 .menu-cards .dish-card .photo-credits a,
 .menu-cards .dish-card .photo-credits p {
     font-size: 0.5rem;
+}
+
+/* Quantity box */
+
+.quantity {
+}
+.quantity button {
+    padding: 3px 0;
+    width: 40px;
+    margin: 0 10px;
+}
+
+.quantity p {
+    margin: 0 10px;
+}
+
+/* ============ Cart display ========== */
+.cart {
+    flex-wrap: wrap;
+}
+
+.dish-card-cart {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 40px 10px;
+    width: 100%;
+    height: 15vh;
+    min-width: 248px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.dish-card-cart .dish-image {
+    height: 100%;
+    width: 25%;
+    overflow: hidden;
+}
+
+.dish-card-cart .dish-image img {
+    position: relative;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.dish-card-cart .dish-description {
+    width: 30%;
+}
+
+.dish-card-cart .dish-description h1,
+.dish-card-cart .dish-description p {
+    text-align: left;
+    margin: 5px 10px;
+    padding: 0;
+}
+
+.dish-card-cart .dish-description h1 {
+    font-size: 1.8vw;
+}
+.dish-card-cart .dish-description p {
+    font-size: 1vw;
+}
+
+.dish-card-cart .price-tag {
+    position: relative;
+    flex-wrap: nowrap;
+}
+
+.dish-card-cart .quantity {
+    width: 10%;
+    margin: 0 30px;
+}
+
+.dish-card-cart .quantity button {
+    padding: 3px 0;
+    width: 30%;
+    margin: 0;
+}
+
+.dish-card-cart button {
+    width: 10%;
 }
 
 /* ============ footer ========== */
