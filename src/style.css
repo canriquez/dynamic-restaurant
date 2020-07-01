@@ -44,6 +44,20 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+/* ================ section ================ */
+
+.menu-cards .section-title {
+    width: 100%;
+    padding: 20px 0;
+}
+.section-title h1 {
+    font-family: futura-medium, sans-serif;
+    text-align: left;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    text-transform: uppercase;
+    color: #d40028;
+}
 
 /* ================ header navigation ================ */
 
@@ -97,6 +111,7 @@ body {
 }
 
 .btn-dish {
+    font-family: futura-light, sans-serif;
     border: 1px solid transparent;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
@@ -170,6 +185,23 @@ body {
     font-size: 0.8rem;
     text-decoration: none;
     color: gray;
+    margin: 3px;
+}
+
+.price-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.price-tag p {
+    font-family: futura-bold, sans-serif;
+    font-size: 1.1rem;
+    margin: 0;
+    color: #d40028;
     margin: 3px;
 }
 
@@ -288,6 +320,7 @@ body {
 }
 
 .food p {
+    font-family: futura-light, sans-serif;
     font-size: 0.8rem;
     margin: 0;
     color: #fff;
@@ -342,7 +375,7 @@ body {
 }
 
 .col-wrap p {
-    font-family: futura-bold, sans-serif;
+    font-family: futura-light, sans-serif;
     font-size: 0.9rem;
     min-width: 70px;
     justify-content: center;
