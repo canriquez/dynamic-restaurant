@@ -7,10 +7,6 @@ import { renderCartSection, clearCartSection, hideCartSection, showCartSection }
 import { renderContactSection, clearContactSection, hideContactSection, showContactSection } from './components/contactsection';
 import { renderFooterSection, clearFooterSection, hideFooterSection, showFooterSection } from './components/footersection';
 
-console.log("init webpack done");
-
-
-
 function addListeners() {
     // add event listeners to menu options on each render
     document.getElementById('m1').addEventListener('click', () => {
@@ -36,6 +32,7 @@ function pageLoad() {
     renderCartSection();
     renderContactSection();
     renderFooterSection();
+    return;
 };
 
 // tab-switching logic
