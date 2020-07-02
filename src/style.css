@@ -97,31 +97,31 @@ body {
 
 #brand-nav {
     padding-top: 24px;
-    padding-left: 36px;
+    padding-left: 10px;
 }
 
 #brand-nav img {
-    width: 296px;
+    width: 29vw;
 }
 #global img {
-    width: 30px;
+    width: 2.5vw;
     padding-right: 0px;
 }
 
 .action-wrap {
-    width: 45%;
+    width: 50vw;
 }
 
 .action-wrap p {
     font-family: futura-bold, sans-serif;
-    font-size: 1.5rem;
+    font-size: 0.8rem;
     color: #d40028;
     margin: 0;
     text-transform: uppercase;
 }
 .action-wrap span {
     font-family: futura-bold, sans-serif;
-    font-size: 1rem;
+    font-size: 0.5rem;
     padding: 0 5px;
     margin-left: 5px;
     color: #fff;
@@ -143,7 +143,7 @@ body {
     font-family: futura-light, sans-serif;
     border: 1px solid transparent;
     padding: 0.375rem 0.75rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     border-radius: 0.25rem;
     width: 85%;
@@ -316,8 +316,14 @@ body {
 
 /* ============== menu cards ============= */
 
-.menu-cards {
+.menuSection {
     padding-top: 10vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-cards {
+    padding-top: 2vh;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -328,9 +334,10 @@ body {
     align-items: center;
     position: relative;
     margin: 40px 10px;
-    width: 22%;
-    height: 45vh;
-    min-width: 248px;
+    width: 23%;
+    height: 38vh;
+    min-width: 260px;
+    min-height: 300px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
@@ -375,7 +382,7 @@ body {
 
 .dish-description h1 {
     padding-top: 10px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin: 0 5px;
     text-transform: uppercase;
 }
@@ -383,9 +390,9 @@ body {
     text-transform: capitalize;
 }
 .dish-description p {
-    font-size: 0.7rem;
-    margin: 10px 0;
-    padding: 0 15px;
+    font-size: 0.8rem;
+    margin: 4px 0;
+    padding: 0 10px;
     line-height: 1.5rem;
 }
 
@@ -412,6 +419,7 @@ body {
 
 .quantity p {
     font-family: futura-bold, sans-serif;
+    font-size: 1rem;
     margin: 0 10px;
     color: #d40028;
 }

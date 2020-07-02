@@ -4,14 +4,6 @@ import { renderNavigation, renderMainContent } from './renderEngine';
 /* Import navigation Icons */
 
 
-// Dish Images
-/* import d01 from './images/photo/d01.jpg'
-import d02 from './images/photo/d02.jpg'
-import d03 from './images/photo/d03.jpg'
-import d04 from './images/photo/d04.jpg'
-import d05 from './images/photo/d05.jpg'
-import d06 from './images/photo/d06.jpg'
-import d07 from './images/photo/d07.jpg' */
 
 
 console.log("init webpack done");

@@ -32,7 +32,7 @@ const dishes = [
         dishName: 'PIZZA MARGARITA',
         dishDescription: 'Enjoy our very best home made pizza margerita. Tomato, basil and muzzarella',
         buttonDescription: 'add Margarita to cart',
-        priceTag: '$ 7.50',
+        priceTag: 7.50,
         dishGroup: 'PIZZA',
         photoId: 'd01',
         photoSource1: '<a href="https://unsplash.com/@dabyki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadezhda Filatova</a>',
@@ -40,9 +40,9 @@ const dishes = [
     },
     {
         dishName: 'PEPPE PIZZA',
-        dishDescription: 'Delicious Shredded Mozzarella, Parmesan, Tomato Souce, Basil and Italian pepperoni.',
+        dishDescription: 'Delicious Mozzarella, Parmesan, Tomato, Basil and Italian pepperoni.',
         buttonDescription: 'add Peppe Pizza to cart',
-        priceTag: '$ 8.50',
+        priceTag: 8.50,
         dishGroup: 'PIZZA',
         photoId: 'd02',
         photoSource1: '<a href="https://unsplash.com/@shootdelicious?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eiliv-Sonas Aceron</a>',
@@ -52,7 +52,7 @@ const dishes = [
         dishName: 'PIZZA ANANA',
         dishDescription: '(Not in Naples!) Enjoy your flavours. Tomato, Pinnaple, Muzzarella and Jam!',
         buttonDescription: 'add Pizza Anana to cart',
-        priceTag: '$ 8.20',
+        priceTag: 8.20,
         dishGroup: 'PIZZA',
         photoId: 'd03',
         photoSource1: '<a href="https://unsplash.com/@dabyki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nadezhda Filatova</a>',
@@ -62,7 +62,7 @@ const dishes = [
         dishName: 'PIZZA FUNGUI',
         dishDescription: 'Mozzarella cheese, goat cheese, mashrooms and fresh herbs',
         buttonDescription: 'add Pizza Fungui to cart',
-        priceTag: '$ 9.10',
+        priceTag: 9.10,
         dishGroup: 'PIZZA',
         photoId: 'd04',
         photoSource1: '<a href="https://unsplash.com/@pinarimsi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pinar Kucuk </a>',
@@ -72,7 +72,7 @@ const dishes = [
         dishName: 'spagetti capresse',
         dishDescription: 'Fresh tomatoes, mozzarella and basil. Is the perfect combination. Enjoy!',
         buttonDescription: 'add capresse to cart',
-        priceTag: '$ 9.75',
+        priceTag: 9.75,
         dishGroup: 'PASTA',
         photoId: 'd05',
         photoSource1: '<a href="https://unsplash.com/@foxfox?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Natalia Y </a>',
@@ -83,7 +83,7 @@ const dishes = [
         dishName: 'pasta pescatora',
         dishDescription: 'Shrimp Tomato Spinach Pasta in Garlic Butter Sauce. Delicious!',
         buttonDescription: 'add pescatora to cart',
-        priceTag: '$ 11.20',
+        priceTag: 11.20,
         dishGroup: 'PASTA',
         photoId: 'd06',
         photoSource1: '<a href="https://unsplash.com/@islandsandsunsets?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Olayinka Babalola </a>',
@@ -93,7 +93,7 @@ const dishes = [
         dishName: 'Punch Tagliatelle',
         dishDescription: 'Tagliatelle with pumpkin, pancetta, sage and a little chilli for nice punch.!',
         buttonDescription: 'add Tagliatelle to cart',
-        priceTag: '$ 10.50',
+        priceTag: 10.50,
         dishGroup: 'PASTA',
         photoId: 'd07',
         photoSource1: '<a href="https://unsplash.com/@ib1994?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Izzy Boscawen </a>',
@@ -154,31 +154,40 @@ function addImagesMenuContainer() {
     const d03Icon = new Image();
     const d04Icon = new Image();
     const d05Icon = new Image();
-    //const d05cIcon = new Image();
+
     const d06Icon = new Image();
     const d07Icon = new Image();
-    //onst d07cIcon = new Image();
+
     d01Icon.src = d01;
     d02Icon.src = d02;
     d03Icon.src = d03;
     d04Icon.src = d04;
     d05Icon.src = d05;
-    //d05cIcon.src = d05;
+
     d06Icon.src = d06;
     d07Icon.src = d07;
-    //d07cIcon.src = d07;
+
 
     document.getElementById('d01').appendChild(d01Icon);
     document.getElementById('d02').appendChild(d02Icon);
     document.getElementById('d03').appendChild(d03Icon);
     document.getElementById('d04').appendChild(d04Icon);
     document.getElementById('d05').appendChild(d05Icon);
-    //document.getElementById('d05c').appendChild(d05cIcon);
+
     document.getElementById('d06').appendChild(d06Icon);
     document.getElementById('d07').appendChild(d07Icon);
-    //document.getElementById('d07c').appendChild(d07cIcon);
 
 
+}
+
+function addImagesCartContainer() {
+    //Dish images cart
+    const d05cIcon = new Image();
+    const d07cIcon = new Image();
+    d05cIcon.src = d05;
+    d07cIcon.src = d07;
+    document.getElementById('d05c').appendChild(d05cIcon);
+    document.getElementById('d07c').appendChild(d07cIcon);
 }
 
 function renderNavigation() {
@@ -191,6 +200,7 @@ function renderNavigation() {
     htmlTag += '<p id="m1">home</p>';
     htmlTag += '<p id="m2">our menu</p>';
     htmlTag += '<p id="m3" class="row-flex">your cart<span id="navItems">2</span></p>';
+    htmlTag += '<p id="m4" class="row-flex">contact us</p>';
     htmlTag += '</div><div id="global"></div></nav></header>';
 
     document.getElementById('content').innerHTML = htmlTag;
@@ -215,12 +225,12 @@ function updateSectionName(sectionName, name) {
     document.getElementById(sectionName).innerHTML = htmlTag;
 }
 
-function renderSectionContainer(childOfId, name) {
+function renderSectionContainer(childOfId, idName, className) {
     let contentTag = document.getElementById(childOfId);
 
     let newTag = document.createElement('div');
-    newTag.setAttribute("class", name);
-    newTag.setAttribute("id", name);
+    newTag.setAttribute("class", className);
+    newTag.setAttribute("id", idName);
 
     contentTag.appendChild(newTag);
     return;
@@ -233,7 +243,7 @@ function renderDishCard(dish) {
     htmlTag += '<div class="photo-credits row-flex"><p>Photo by</p>';
     htmlTag += dish.photoSource1;
     htmlTag += dish.photoSource2;
-    htmlTag += '</div><div class="price-tag"><p>' + dish.priceTag + '</p></div>';
+    htmlTag += '</div><div class="price-tag"><p>' + dish.priceTag.toFixed(2) + ' $</p></div>';
     htmlTag += '<div class="dish-description"><h1>' + dish.dishName + '</h1>';
     htmlTag += '<p>' + dish.dishDescription + '</p></div>';
     htmlTag += '<div class="quantity row-flex">';
@@ -244,7 +254,7 @@ function renderDishCard(dish) {
 }
 
 function buildDishMenu() {
-
+    addTagToContainerId('menuSection', 'div', 'menuWrap', 'menu-cards row-flex');
     let dish = renderDishCard(dishes[0]);
     dish += renderDishCard(dishes[1]);
     dish += renderDishCard(dishes[2]);
@@ -252,11 +262,46 @@ function buildDishMenu() {
     dish += renderDishCard(dishes[4]);
     dish += renderDishCard(dishes[5]);
     dish += renderDishCard(dishes[6]);
-    document.getElementById('menuSection').innerHTML = dish;
+    document.getElementById('menuWrap').innerHTML = dish;
     addImagesMenuContainer();
     return
+};
 
+function renderCartItem(dish, q) {
+    let subtotal = q * dish.priceTag;
+    let htmlTag = '<div class="dish-card-cart row-flex">';
+    htmlTag += '<div id="' + dish.photoId + 'c" class="dish-image">';
+    htmlTag += '</div><div class="food"><p>' + dish.dishGroup + '</p></div>';
+    htmlTag += '<div class="dish-description"><h1>' + dish.dishName + '</h1>';
+    htmlTag += '<p>' + dish.dishDescription + '</p>';
+    htmlTag += '</div><div class="price-tag row-flex">'
+    htmlTag += '<p>$</p><p>' + dish.priceTag + '</p></div>';
+    htmlTag += '<p>X</p><div class="quantity row-flex">';
+    htmlTag += '<button class="btn btn-dish"><span>-</span></button>';
+    htmlTag += '<p>' + q + '</p>';
+    htmlTag += '<button class="btn btn-dish"><span>+</span></button></div>';
+    htmlTag += '<div class="price-tag row-flex">';
+    htmlTag += '<p>=</p><p>$</p><p>' + subtotal.toFixed(2) + '</p></div>';
+    htmlTag += '<div class="btn-delete"></div></div>';
+    return [subtotal, htmlTag];
+}
 
+function renderCartTotal(total) {
+    let htmlTag = '<div class="total row-flex">';
+    htmlTag += '<p>Total:</p><p>' + total + ' $</p>';
+    htmlTag += '<button class="btn btn-action">Submit your Order</button></div>';
+    return htmlTag;
+}
+
+function buildCart() {
+    addTagToContainerId('cartSection', 'div', 'cartWrap', 'cart row-flex');
+    let item1 = renderCartItem(dishes[4], 1);
+    let item2 = renderCartItem(dishes[6], 2);
+    let htmlTag = item1[1] + item2[1];
+    let total = item1[0] + item2[0];
+    htmlTag += renderCartTotal(total);
+    document.getElementById('cartWrap').innerHTML = htmlTag;
+    addImagesCartContainer();
 }
 
 function renderMainSectionContainer() {
@@ -287,13 +332,22 @@ function renderMainContent() {
     addImagesMainContainer();
 
     //Add Menu Section
-    addTagToContainerId('main', 'div', 'menuSection', 'menu-cards row-flex');
-    renderSectionContainer('menuSection', 'section-title');
-    updateSectionName('section-title', 'our menu');
+    addTagToContainerId('main', 'div', 'menuSection', 'menuSection row-flex');
+    renderSectionContainer('menuSection', 'menu-section-title', 'section-title');
+    updateSectionName('menu-section-title', 'our menu');
+
 
     //build dish menu
-
     buildDishMenu();
+
+
+    //Add Cart Section
+    addTagToContainerId('main', 'div', 'cartSection', 'cart row-flex');
+    renderSectionContainer('cartSection', 'cart-section-title', 'section-title');
+    updateSectionName('cart-section-title', 'your cart');
+
+    //build cart
+    buildCart();
 }
 
 
