@@ -362,7 +362,7 @@ function renderContactForm() {
 
 }
 
-function renderMainContent() {
+function renderHome() {
     addTagToContainerId('content', 'section', 'main');
     addTagToContainerId('main', 'div', 'main-section');
     renderMainSectionContainer();
@@ -403,4 +403,4 @@ function renderMainContent() {
 }
 
 
-export { renderNavigation, renderMainContent };
+export { renderHome, renderMainContent };
