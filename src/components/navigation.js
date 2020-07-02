@@ -19,7 +19,7 @@ function renderNavigation() {
     htmlTag += '<p id="m2">our menu</p>';
     htmlTag += '<p id="m3" class="row-flex">your cart<span id="navItems">2</span></p>';
     htmlTag += '<p id="m4" class="row-flex">contact us</p>';
-    htmlTag += '</div><div id="global"></div></nav></header>';
+    htmlTag += '<div id="global"></div></div></nav></header>';
     htmlTag += '<section id="main"></section>';
 
     document.getElementById('content').innerHTML = htmlTag;

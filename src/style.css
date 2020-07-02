@@ -90,6 +90,11 @@ body {
     margin-left: auto;
 }
 
+.left-wrap {
+    justify-content: flex-start;
+    width: 60%;
+}
+
 #burger-menu img {
     width: 36px;
     height: 24px;
@@ -101,7 +106,7 @@ body {
 }
 
 #brand-nav img {
-    width: 29vw;
+    width: 100%;
 }
 #global img {
     width: 2.5vw;
@@ -109,7 +114,7 @@ body {
 }
 
 .action-wrap {
-    width: 50vw;
+    width: 50%;
 }
 
 .action-wrap p {
