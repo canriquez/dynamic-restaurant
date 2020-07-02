@@ -49,6 +49,7 @@ To get a local copy up and running, follow these simple example steps.
 - Github: [@canriquez](https://github.com/canriquez)
 - Twitter: [@cranriquez](https://twitter.com/cranriquez)
 - Linkedin: [linkedin](https://www.linkedin.com/in/carlosanriquez/)
+- Portfolio: [carlosanriquez.com](https://www.carlosanriquez.com)
 
 ## 🤝 Contributing
 
