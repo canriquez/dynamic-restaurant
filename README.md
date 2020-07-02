@@ -1,16 +1,15 @@
-# Project Name
+# Dynamic Restaurant Page
 
-> One paragraph statement about the project.
+> This project implements DOM manipulation by dynamically rendering a simple restaurant homepage.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+The project uses JavaScript alone to generate the entire contents of the website.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML/CSS, Javascrtip, Webpack, NPM, yarn.
+- VSCode
 
 ## Live Demo
 
@@ -19,39 +18,31 @@ Additional description about the project and its features.
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+- To install the app in your sistem, make sure you have node/npm installed. [get npm](https://www.npmjs.com/get-npm)
 
 ### Setup
+- Clone the reposory in your system by using: 
+
+``` git clone https://github.com/canriquez/dynamic-restaurant.git ```
 
 ### Install
+- Next step is to CD into the local repository and run:
 
-### Usage
-
-### Run tests
-
-### Deployment
+``` $ npm install ```
 
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 ***Carlos Anriquez***
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@canriquez](https://github.com/canriquez)
+- Twitter: [@cranriquez](https://twitter.com/cranriquez)
+- Linkedin: [linkedin](https://www.linkedin.com/in/carlosanriquez/)
 
 ## 🤝 Contributing
 
@@ -65,9 +56,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Family, always my family.
+- The Beagles!
 
 ## 📝 License
 

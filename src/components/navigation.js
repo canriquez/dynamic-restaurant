@@ -35,7 +35,7 @@ function renderNavigation() {
     document.getElementById('brand-nav').appendChild(navBrand);
     document.getElementById('global').appendChild(navGlobal);
 
-    renderNavCartItemNumber(3);
+    renderNavCartItemNumber(2);
 
 };
 
