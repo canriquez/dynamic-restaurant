@@ -23,6 +23,8 @@ import d05 from './images/photo/d05.jpg'
 import d06 from './images/photo/d06.jpg'
 import d07 from './images/photo/d07.jpg'
 
+//form images
+import restaurant from './images/photo/restaurant.jpg'
 
 
 // Dish Array
@@ -323,6 +325,41 @@ function renderMainSectionContainer() {
     htmlTag += '</div><div id="payment-tags" class="row-flex"></div></div>';
     document.getElementById('main-section').innerHTML = htmlTag;
     return;
+};
+
+function renderFooter() {
+    let htmlTag = '<div class="col-wrap"><p>About us</p><ul class="about">';
+    htmlTag += '<li>Menu</li><li>Restaurants</li><li>Freshness</li><li>About us</li>';
+    htmlTag += '</ul></div><div class="col-wrap"><p>Legal</p><ul class="about">';
+    htmlTag += '<li>Terms and Conditions</li><li>Data Security</li></ul></div>';
+    htmlTag += '<div class="col-wrap"><p>International</p><ul class="about">';
+    htmlTag += '<li>Germany</li><li>Sweden</li><li>United Kingdom</li><li>Franchise Portal</li></ul></div>';
+    document.getElementById('footerWrap').innerHTML = htmlTag;
+    return;
+}
+
+function renderContactForm() {
+    const formImage = new Image();
+    formImage.src = restaurant;
+    addTagToContainerId('formSection', 'div', 'contactWrap');
+    addTagToContainerId('contactWrap', 'div', 'contactForm', 'contact-card col-flex');
+    let htmlTag = '<div id="hero-form-image"></div>';
+    htmlTag += '<div class="form-message">';
+    htmlTag += '<p>Fillout the form to learn more</p></div>';
+    htmlTag += '<div class="formCol col-flex"><form><div class="formRow row-flex">';
+    htmlTag += '<div class="inputForm col-flex"><label for="name">first name</label>';
+    htmlTag += '<input type="text" name="first_name" placeholder="John"/></div>';
+    htmlTag += '<div class="inputForm col-flex"><label for="email">email</label>';
+    htmlTag += '<input type="email" name="email" placeholder="john.smith@gmail.com"/></div></div>';
+    htmlTag += '<div class="divider"></div>';
+    htmlTag += '<div class="inputForm col-flex"><label for="comments">comments</label>';
+    htmlTag += '<textarea cols="46" rows="3" name="comments"></textarea></div>';
+    htmlTag += '<button class="btn btn-action">Send Message</button></div></form></div>';
+
+
+    document.getElementById('contactForm').innerHTML = htmlTag;
+    document.getElementById('hero-form-image').appendChild(formImage);
+
 }
 
 function renderMainContent() {
@@ -348,9 +385,22 @@ function renderMainContent() {
 
     //build cart
     buildCart();
+
+    // Add Form Section
+    addTagToContainerId('main', 'div', 'formSection', 'form row-flex');
+    renderSectionContainer('formSection', 'form-section-title', 'section-title');
+    updateSectionName('form-section-title', 'contact us');
+    renderContactForm();
+
+
+    //Add Footer Section
+    addTagToContainerId('main', 'footer', 'page-footer', '');
+    addTagToContainerId('page-footer', 'div', 'footerWrap', 'footer-wrap row-flex');
+    renderFooter();
+
+
+
 }
-
-
 
 
 export { renderNavigation, renderMainContent };

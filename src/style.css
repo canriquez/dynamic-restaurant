@@ -518,6 +518,100 @@ body {
     padding: 0;
 }
 
+/* ============ contact form ==== */
+
+form input {
+    height: 25px;
+    border-width: 1px;
+    background-color: #f8f9fa;
+    border: none;
+    padding: 6px 8px;
+}
+form textarea {
+    height: 45px;
+    border-width: 1px;
+    background-color: #f8f9fa;
+    border: none;
+}
+
+form button {
+    width: 100%;
+}
+
+.form {
+    flex-wrap: wrap;
+}
+
+#contactWrap {
+    width: 100%;
+}
+
+.contact-card {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 20px auto 40px auto;
+    width: 500px;
+    height: 400px;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+#hero-form-image {
+    position: relative;
+    width: 100%;
+    height: 40%;
+}
+
+#hero-form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.form-message {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 5px 15px;
+    width: 80%;
+}
+
+.form-message p {
+    font-family: futura-bold, sans-serif;
+    font-size: 1.5rem;
+    color: #d40028;
+    text-align: center;
+}
+
+.inputForm {
+    align-items: flex-start;
+}
+.formCol {
+    margin: 5px 0 15px 0;
+}
+
+.formRow {
+    margin: 15px 0 10px 0;
+}
+
+.inputForm label {
+    font-family: futura-medium, sans-serif;
+    font-size: 0.8rem;
+    color: #d40028;
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+.inputForm textarea {
+    margin-bottom: 10px;
+}
 /* ============ footer ========== */
 
 #page-footer {
