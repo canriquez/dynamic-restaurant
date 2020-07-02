@@ -1,39 +1,38 @@
 
 function clearAllSections() {
-    document.getElementById('content').innerHTML = '';
-    return;
+  document.getElementById('content').innerHTML = '';
 }
 
 
 function addTagToContainerId(containerId, tagType, tagId = '', classes = '') {
-    let contentTag = document.getElementById(containerId);
-    let newTag = document.createElement(tagType);
-    if (tagId != '') {
-        newTag.setAttribute("id", tagId);
-    }
+  const contentTag = document.getElementById(containerId);
+  const newTag = document.createElement(tagType);
+  if (tagId !== '') {
+    newTag.setAttribute('id', tagId);
+  }
 
-    if (classes != '') {
-        newTag.setAttribute("class", classes);
-    };
-    contentTag.appendChild(newTag);
-    return
+  if (classes !== '') {
+    newTag.setAttribute('class', classes);
+  }
+  contentTag.appendChild(newTag);
 }
 
 function updateSectionName(sectionName, name) {
-    let htmlTag = '<h1>' + name + '</h1>';
-    document.getElementById(sectionName).innerHTML = htmlTag;
+  const htmlTag = `<h1>${name}</h1>`;
+  document.getElementById(sectionName).innerHTML = htmlTag;
 }
 
 function renderSectionContainer(childOfId, idName, className) {
-    let contentTag = document.getElementById(childOfId);
+  const contentTag = document.getElementById(childOfId);
 
-    let newTag = document.createElement('div');
-    newTag.setAttribute("class", className);
-    newTag.setAttribute("id", idName);
+  const newTag = document.createElement('div');
+  newTag.setAttribute('class', className);
+  newTag.setAttribute('id', idName);
 
-    contentTag.appendChild(newTag);
-    return;
+  contentTag.appendChild(newTag);
 }
 
 
-export { clearAllSections, addTagToContainerId, updateSectionName, renderSectionContainer };
+export {
+  clearAllSections, addTagToContainerId, updateSectionName, renderSectionContainer,
+};

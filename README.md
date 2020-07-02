@@ -13,7 +13,7 @@ The project uses JavaScript alone to generate the entire contents of the website
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://rawcdn.githack.com/canriquez/dynamic-restaurant/ae5d0c60f71660cf225ce94b650b210f05e3eb13/dist/index.html)
 
 
 ## Getting Started
