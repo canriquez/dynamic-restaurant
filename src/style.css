@@ -128,6 +128,10 @@ body {
     background-color: #d40028;
     border-radius: 100%;
 }
+
+.action-wrap p {
+    cursor: pointer;
+}
 /* =======  Buttons  =========   */
 .btn {
     display: block;
@@ -361,8 +365,6 @@ body {
     top: 0;
     left: 0;
     padding: 5px;
-    /*     background-color: rgba(255, 255, 255, 0.6);
-    color: transparent; */
     background-color: #d40028;
 }
 

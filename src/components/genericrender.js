@@ -1,4 +1,10 @@
 
+function clearAllSections() {
+    document.getElementById('content').innerHTML = '';
+    return;
+}
+
+
 function addTagToContainerId(containerId, tagType, tagId = '', classes = '') {
     let contentTag = document.getElementById(containerId);
     let newTag = document.createElement(tagType);
@@ -30,4 +36,4 @@ function renderSectionContainer(childOfId, idName, className) {
 }
 
 
-export { addTagToContainerId, updateSectionName, renderSectionContainer };
+export { clearAllSections, addTagToContainerId, updateSectionName, renderSectionContainer };

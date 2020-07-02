@@ -60,7 +60,6 @@ function addImagesMainContainer() {
 
 
 function renderMainSection() {
-    addTagToContainerId('content', 'section', 'main');
     addTagToContainerId('main', 'div', 'main-section');
     renderMainSectionContainer();
     addImagesMainContainer();
