@@ -13,9 +13,9 @@ console.log("init webpack done");
 
 renderNavigation();
 renderMainSection();
-renderMenuSection();
-renderCartSection();
-//clearMainSection();
+//renderMenuSection();
+//renderCartSection();
+clearMainSection();
 renderContactSection();
 renderFooterSection();
 
