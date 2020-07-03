@@ -1,5 +1,5 @@
 import { addTagToContainerId, updateSectionName, renderSectionContainer } from './genericrender';
-import { dishes } from './dishmenu';
+import dishes from './dishmenu';
 
 // Dish Images
 import d01 from '../images/photo/d01.jpg';

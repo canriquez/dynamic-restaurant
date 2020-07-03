@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 // Dish Array
 const dishes = [
   {
@@ -76,4 +74,4 @@ const dishes = [
 
 ];
 
-export { dishes };
+export default dishes;
