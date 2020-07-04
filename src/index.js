@@ -108,4 +108,16 @@ function addListeners() {
 
 document.addEventListener('DOMContentLoaded', () => {
   pageLoad();
+
+  window.addEventListener('resize', () => {
+    if (window.screen.width < 768) {
+      document.getElementById('action-wrap').classList.add('hide');
+      document.getElementById('burger-menu').classList.add('show');
+      document.getElementById('burger-menu').classList.remove('hide');
+    } else {
+      document.getElementById('burger-menu').classList.add('hide');
+      document.getElementById('action-wrap').classList.remove('hide');
+      document.getElementById('action-wrap').classList.add('show');
+    }
+  });
 });
