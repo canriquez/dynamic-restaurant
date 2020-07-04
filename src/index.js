@@ -75,7 +75,7 @@ function home() {
 function menu() {
   clearAllSections();
   renderNavigation();
-  updateNavigationFunctions()
+  updateNavigationFunctions();
   addListeners();
   renderMenuSection();
   renderFooterSection();
@@ -84,7 +84,7 @@ function menu() {
 function cart() {
   clearAllSections();
   renderNavigation();
-  updateNavigationFunctions()
+  updateNavigationFunctions();
   addListeners();
   renderCartSection();
   renderFooterSection();
@@ -93,7 +93,7 @@ function cart() {
 function contact() {
   clearAllSections();
   renderNavigation();
-  updateNavigationFunctions()
+  updateNavigationFunctions();
   addListeners();
   renderContactSection();
   renderFooterSection();
