@@ -142,7 +142,7 @@ body {
   border-radius: 100%;
 }
 
-/* Extra small devices (phones, 600px and down) */
+/* x-small devices (phones, 600px and down) */
 @media only screen and (max-width: 375px) {
   #content .left-wrap {
     width: 100%;
