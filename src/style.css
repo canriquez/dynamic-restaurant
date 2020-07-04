@@ -143,7 +143,12 @@ body {
 }
 
 /* x-small devices (phones, 600px and down) */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
+  #navigation .nav-wrap {
+    height: 90px;
+    width: 100%;
+  }
+
   #content .left-wrap {
     width: 100%;
   }
@@ -164,7 +169,7 @@ body {
     width: 100vw;
     height: 40vh;
 
-    top: 15%;
+    top: 91px;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(212, 0, 40, 0.9);
