@@ -408,8 +408,8 @@ body {
 
   .brand-container {
     width: 90%;
-    height: 74%;
-    justify-content: center;
+    height: 87%;
+    justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.8);
   }
 
@@ -417,6 +417,9 @@ body {
   .brand-container .options p {
     font-size: 1rem;
   }
+}
+/* x-small devices (phones, 600px and down) */
+@media only screen and (min-width: 768px) {
 }
 
 /* ============== menu cards ============= */
@@ -720,8 +723,8 @@ form button {
   margin: 20px auto 40px auto;
   width: 500px;
   height: 400px;
-  min-width: 300px;
-  min-height: 300px;
+  /*   min-width: 300px;
+  min-height: 300px; */
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -779,6 +782,56 @@ form button {
 
 .inputForm textarea {
   margin-bottom: 10px;
+}
+
+/* x-small devices (phones, 600px and down) */
+@media only screen and (max-width: 414px) {
+  #formSection {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #contactWrap {
+    width: 100%;
+  }
+
+  #contactForm {
+    width: 100%;
+    height: 85%;
+  }
+
+  #contactForm .formRow {
+    width: 98%;
+    flex-wrap: wrap;
+  }
+
+  #contactForm .formRow .inputForm {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+  #contactForm input {
+    width: 100%;
+    height: 40px;
+  }
+
+  form div:nth-child(3) {
+    width: 93%;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+  form textarea {
+    margin: 0px;
+    width: 100%;
+    height: 60px;
+  }
+
+  form .btn {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /* ============ footer ========== */
