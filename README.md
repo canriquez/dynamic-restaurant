@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/canriquez/dynamic-restaurant/d095ebec0a3dd6d1e3267a9808a46410a44e92da/dist/index.html)
+[Live Demo Link](https://rawcdn.githack.com/canriquez/dynamic-restaurant/dc6a7fec9c59e7882eeaf8af87ada09a17c41964/dist/index.html)
 
 
 ## Getting Started
