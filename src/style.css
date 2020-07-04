@@ -384,6 +384,41 @@ body {
   color: #48453c;
 }
 
+/* x-small devices (phones, 600px and down) */
+@media only screen and (max-width: 414px) {
+  .btn-opt {
+    font-size: 0.8rem;
+    margin: 12px 0;
+  }
+
+  .btn-action {
+    font-size: 1rem;
+  }
+
+  .photo-credits {
+    padding: 2px;
+    margin: 2px;
+  }
+  .photo-credits p,
+  .photo-credits a {
+    font-family: futura-light, sans-serif;
+    font-size: 0.7rem;
+    text-transform: ;
+  }
+
+  .brand-container {
+    width: 90%;
+    height: 74%;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .brand-container .brand-mission p,
+  .brand-container .options p {
+    font-size: 1rem;
+  }
+}
+
 /* ============== menu cards ============= */
 
 .menuSection {
@@ -580,6 +615,73 @@ body {
   width: 100%;
   height: 50px;
   padding: 0;
+}
+
+/* x-small devices (phones, 600px and down) */
+@media only screen and (max-width: 414px) {
+  .btn-dish span {
+    padding: 0 3px;
+  }
+
+  .btn-delete {
+    position: absolute;
+    bottom: 8px;
+    left: 26vw;
+  }
+
+  .dish-card-cart {
+    flex-wrap: wrap;
+    height: 25vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .dish-card-cart .dish-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30vw;
+  }
+
+  .dish-card-cart .food h1 {
+    font-size: 0.6rem;
+  }
+
+  .dish-card-cart .dish-description {
+    width: 100%;
+  }
+
+  .dish-card-cart .dish-description h1 {
+    padding-left: 30vw;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .dish-card-cart div:nth-child(4) {
+    /* unit price item */
+    margin-left: 36%;
+    background: none;
+  }
+
+  .dish-card-cart div:nth-child(6) {
+    /* quantity changer */
+    margin-left: 0;
+    margin-right: 6px;
+    width: 20vw;
+  }
+
+  .dish-card-cart div:nth-child(7) {
+    /* Total price item */
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 40%;
+    justify-content: flex-end;
+  }
+
+  .dish-card-cart .dish-description p {
+    display: none;
+  }
 }
 
 /* ============ contact form ==== */
