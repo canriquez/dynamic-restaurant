@@ -51,7 +51,7 @@ body {
 }
 
 .show {
-  display: block;
+  display: "";
 }
 
 /* ================ section ================ */
@@ -82,6 +82,7 @@ body {
   left: 0;
   border-bottom: 1px solid #e9ecef;
   z-index: 1;
+  overflow: hidden;
 }
 
 .nav-wrap {
@@ -119,6 +120,7 @@ body {
 
 .action-wrap {
   width: 50%;
+  transition: all 400ms ease-in-out;
 }
 
 .action-wrap p {
@@ -138,6 +140,57 @@ body {
   color: #fff;
   background-color: #d40028;
   border-radius: 100%;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 375px) {
+  #content .left-wrap {
+    width: 100%;
+  }
+
+  #x-mobile-menu img {
+    width: 36px;
+    height: 24px;
+  }
+
+  #brand-nav {
+    padding: 20px 20px 0px 15px;
+    width: 100%;
+  }
+
+  #content .action-wrap {
+    position: fixed;
+    flex-direction: column;
+    width: 100vw;
+    height: 40vh;
+
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(212, 0, 40, 0.9);
+    padding-top: 10px;
+    transition: all 400ms ease-in-out;
+  }
+
+  #content .action-wrap p {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+  #content .action-wrap #navItems {
+    font-size: 0.8rem;
+  }
+  content .action-wrap #m3 {
+    justify-content: center;
+  }
+  #content .action-wrap span {
+    color: #d40028;
+    background-color: #fff;
+  }
+  #global img {
+    display: none;
+  }
 }
 
 /* =======  Buttons  =========   */
@@ -204,6 +257,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   z-index: 0;
+  overflow: hidden;
 }
 
 #main-section {
@@ -652,6 +706,20 @@ form button {
   font-size: 0.8rem;
   list-style: none;
   line-height: 1.5rem;
+}
+
+//###################################################
+//#           XS- screen media query - portrait     #
+//###################################################
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 375px) {
+  #content {
+    display: none !important;
+    /* position: absolute;
+    top: 10%;
+    left: 10%; */
+  }
 }
 
 /* stylelint-enable  no-descending-specificity */

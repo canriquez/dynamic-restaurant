@@ -36,6 +36,26 @@ function pageLoad() {
 
 // tab-switching logic
 
+function showMobileMenu() {
+  document.getElementById('action-wrap').classList.remove('hide');
+  document.getElementById('action-wrap').classList.add('show');
+  document.getElementById('burger-menu').classList.remove('show');
+  document.getElementById('burger-menu').classList.add('hide');
+  document.getElementById('x-mobile-menu').classList.remove('hide');
+  document.getElementById('x-mobile-menu').classList.add('show');
+  return;
+};
+
+function hideMobileMenu() {
+  document.getElementById('action-wrap').classList.remove('show');
+  document.getElementById('action-wrap').classList.add('hide');
+  document.getElementById('burger-menu').classList.remove('hide');
+  document.getElementById('burger-menu').classList.add('show');
+  document.getElementById('x-mobile-menu').classList.remove('show');
+  document.getElementById('x-mobile-menu').classList.add('hide');
+  return;
+};
+
 function home() {
   clearAllSections();
   pageLoad();
@@ -78,6 +98,12 @@ function addListeners() {
   });
   document.getElementById('m4').addEventListener('click', () => {
     contact();
+  });
+  document.getElementById('burger-menu').addEventListener('click', () => {
+    showMobileMenu();
+  });
+  document.getElementById('x-mobile-menu').addEventListener('click', () => {
+    hideMobileMenu();
   });
 }
 
