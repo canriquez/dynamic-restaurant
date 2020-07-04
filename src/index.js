@@ -38,7 +38,7 @@ function updateNavigationFunctions() {
 
 function pageLoad() {
   renderNavigation();
-  updateNavigationFunctions()
+  updateNavigationFunctions();
   addListeners();
   renderMainSection();
   renderMenuSection();
@@ -123,6 +123,6 @@ document.addEventListener('DOMContentLoaded', () => {
   pageLoad();
 
   window.addEventListener('resize', () => {
-    updateNavigationFunctions()
+    updateNavigationFunctions();
   });
 });
