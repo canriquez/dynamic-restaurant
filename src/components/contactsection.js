@@ -18,7 +18,7 @@ function renderContactForm() {
   htmlTag += '<input type="email" name="email" placeholder="john.smith@gmail.com"/></div></div>';
   htmlTag += '<div class="divider"></div>';
   htmlTag += '<div class="inputForm col-flex"><label for="comments">comments</label>';
-  htmlTag += '<textarea cols="46" rows="3" name="comments"></textarea></div>';
+  htmlTag += '<textarea name="comments"></textarea></div>';
   htmlTag += '<button class="btn btn-action">Send Message</button></div></form></div>';
   document.getElementById('contactForm').innerHTML = htmlTag;
   document.getElementById('hero-form-image').appendChild(formImage);

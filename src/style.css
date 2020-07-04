@@ -47,11 +47,11 @@ body {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .show {
-  display: block;
+  display: "" !important;
 }
 
 /* ================ section ================ */
@@ -82,6 +82,7 @@ body {
   left: 0;
   border-bottom: 1px solid #e9ecef;
   z-index: 1;
+  overflow: hidden;
 }
 
 .nav-wrap {
@@ -119,6 +120,7 @@ body {
 
 .action-wrap {
   width: 50%;
+  transition: all 400ms ease-in-out;
 }
 
 .action-wrap p {
@@ -138,6 +140,77 @@ body {
   color: #fff;
   background-color: #d40028;
   border-radius: 100%;
+}
+
+/* x-small devices (phones, 600px and down) */
+@media only screen and (max-width: 414px) {
+  #burger-menu {
+    display: block;
+  }
+
+  #navigation .nav-wrap {
+    height: 90px;
+    width: 100%;
+  }
+
+  #content .left-wrap {
+    width: 100%;
+  }
+
+  #x-mobile-menu img {
+    width: 36px;
+    height: 24px;
+  }
+
+  #brand-nav {
+    padding: 20px 20px 0 15px;
+    width: 100%;
+  }
+
+  #content .action-wrap {
+    position: fixed;
+    flex-direction: column;
+    width: 100vw;
+    height: 40vh;
+    top: 91px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(212, 0, 40, 0.9);
+    padding-top: 10px;
+    transition: all 400ms ease-in-out;
+  }
+
+  #content .action-wrap p {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  #content .action-wrap #navItems {
+    font-size: 0.8rem;
+  }
+
+  content .action-wrap #m3 {
+    justify-content: center;
+  }
+
+  #content .action-wrap span {
+    color: #d40028;
+    background-color: #fff;
+  }
+
+  #global img {
+    display: none;
+  }
+}
+
+/* =================== tablet display ====== */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .action-wrap {
+    display: flex !important;
+    width: 60%;
+  }
 }
 
 /* =======  Buttons  =========   */
@@ -204,6 +277,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   z-index: 0;
+  overflow: hidden;
 }
 
 #main-section {
@@ -323,6 +397,57 @@ body {
   font-size: 1.5vw;
   line-height: 1.8rem;
   color: #48453c;
+}
+
+/* x-small devices (phones, 600px and down) */
+@media only screen and (max-width: 414px) {
+  .btn-opt {
+    font-size: 0.8rem;
+    margin: 12px 0;
+  }
+
+  .btn-action {
+    font-size: 1rem;
+  }
+
+  .photo-credits {
+    padding: 2px;
+    margin: 2px;
+  }
+
+  .photo-credits p,
+  .photo-credits a {
+    font-family: futura-light, sans-serif;
+    font-size: 0.7rem;
+  }
+
+  .brand-container {
+    width: 90%;
+    height: 87%;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .brand-container .brand-mission p,
+  .brand-container .options p {
+    font-size: 1rem;
+  }
+}
+
+/* x-small devices (phones, 600px and down) */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .brand-container {
+    width: 40%;
+    height: 60%;
+    top: 35%;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .brand-container .brand-mission p,
+  .brand-container .options p {
+    font-size: 1.2rem;
+  }
 }
 
 /* ============== menu cards ============= */
@@ -523,6 +648,73 @@ body {
   padding: 0;
 }
 
+/* x-small devices (phones, 600px and down) */
+@media only screen and (max-width: 414px) {
+  .btn-dish span {
+    padding: 0 3px;
+  }
+
+  .btn-delete {
+    position: absolute;
+    bottom: 8px;
+    left: 26vw;
+  }
+
+  .dish-card-cart {
+    flex-wrap: wrap;
+    height: 25vh;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .dish-card-cart .dish-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30vw;
+  }
+
+  .dish-card-cart .food h1 {
+    font-size: 0.6rem;
+  }
+
+  .dish-card-cart .dish-description {
+    width: 100%;
+  }
+
+  .dish-card-cart .dish-description h1 {
+    padding-left: 30vw;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .dish-card-cart div:nth-child(4) {
+    /* unit price item */
+    margin-left: 36%;
+    background: none;
+  }
+
+  .dish-card-cart div:nth-child(6) {
+    /* quantity changer */
+    margin-left: 0;
+    margin-right: 6px;
+    width: 20vw;
+  }
+
+  .dish-card-cart div:nth-child(7) {
+    /* Total price item */
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 40%;
+    justify-content: flex-end;
+  }
+
+  .dish-card-cart .dish-description p {
+    display: none;
+  }
+}
+
 /* ============ contact form ==== */
 
 form input {
@@ -559,8 +751,6 @@ form button {
   margin: 20px auto 40px auto;
   width: 500px;
   height: 400px;
-  min-width: 300px;
-  min-height: 300px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -618,6 +808,57 @@ form button {
 
 .inputForm textarea {
   margin-bottom: 10px;
+  width: 100%;
+}
+
+/* x-small devices (phones, 600px and down) */
+@media only screen and (max-width: 414px) {
+  #formSection {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #contactWrap {
+    width: 100%;
+  }
+
+  #contactForm {
+    width: 100%;
+    height: 85%;
+  }
+
+  #contactForm .formRow {
+    width: 98%;
+    flex-wrap: wrap;
+  }
+
+  #contactForm .formRow .inputForm {
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+  #contactForm input {
+    width: 100%;
+    height: 40px;
+  }
+
+  form div:nth-child(3) {
+    width: 93%;
+    padding: 0 10px;
+    margin: 0 10px;
+  }
+
+  form textarea {
+    margin: 0;
+    width: 100%;
+    height: 60px;
+  }
+
+  form .btn {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /* ============ footer ========== */

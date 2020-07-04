@@ -1,5 +1,6 @@
 
 import navIcon from '../images/burger.svg';
+import xNavIcon from '../images/xicon.svg';
 import brandLogo from '../images/dp_logo.svg';
 import globalLogo from '../images/globe.svg';
 
@@ -13,8 +14,9 @@ function renderNavigation() {
   htmlTag += '<nav class="nav-wrap row-flex">';
   htmlTag += '<div class="left-wrap row-flex">';
   htmlTag += '<div id="burger-menu"></div>';
+  htmlTag += '<div id="x-mobile-menu" class="hide"></div>';
   htmlTag += '<div id="brand-nav"></div></div>';
-  htmlTag += '<div class="action-wrap row-flex">';
+  htmlTag += '<div id="action-wrap" class="action-wrap row-flex">';
   htmlTag += '<p id="m1">home</p>';
   htmlTag += '<p id="m2">our menu</p>';
   htmlTag += '<p id="m3" class="row-flex">your cart<span id="navItems">2</span></p>';
@@ -26,12 +28,15 @@ function renderNavigation() {
   // Add Navigation Icons
 
   const navMenuIcon = new Image();
+  const xMobileMenuIcon = new Image();
   const navBrand = new Image();
   const navGlobal = new Image();
   navMenuIcon.src = navIcon;
+  xMobileMenuIcon.src = xNavIcon;
   navBrand.src = brandLogo;
   navGlobal.src = globalLogo;
   document.getElementById('burger-menu').appendChild(navMenuIcon);
+  document.getElementById('x-mobile-menu').appendChild(xMobileMenuIcon);
   document.getElementById('brand-nav').appendChild(navBrand);
   document.getElementById('global').appendChild(navGlobal);
 
