@@ -16,7 +16,7 @@ function renderNavigation() {
   htmlTag += '<div id="burger-menu"></div>';
   htmlTag += '<div id="x-mobile-menu" class="hide"></div>';
   htmlTag += '<div id="brand-nav"></div></div>';
-  htmlTag += '<div id="action-wrap" class="action-wrap row-flex hide">';
+  htmlTag += '<div id="action-wrap" class="action-wrap row-flex">';
   htmlTag += '<p id="m1">home</p>';
   htmlTag += '<p id="m2">our menu</p>';
   htmlTag += '<p id="m3" class="row-flex">your cart<span id="navItems">2</span></p>';
@@ -41,6 +41,11 @@ function renderNavigation() {
   document.getElementById('global').appendChild(navGlobal);
 
   renderNavCartItemNumber(2);
+  if (screen.width < 768) {
+    document.getElementById('action-wrap').classList.add('hide');
+  } else {
+    document.getElementById('burger-menu').classList.add('hide');
+  };
 }
 
 function clearNavigation() {

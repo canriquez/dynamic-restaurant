@@ -24,6 +24,8 @@ import {
 } from './components/footersection';
 
 
+
+
 function pageLoad() {
   renderNavigation();
   addListeners();
@@ -37,6 +39,7 @@ function pageLoad() {
 // tab-switching logic
 
 function showMobileMenu() {
+  console.log("show menu")
   document.getElementById('action-wrap').classList.remove('hide');
   document.getElementById('action-wrap').classList.add('show');
   document.getElementById('burger-menu').classList.remove('show');
@@ -108,4 +111,19 @@ function addListeners() {
 
 document.addEventListener('DOMContentLoaded', () => {
   pageLoad();
+
+  window.addEventListener('resize', () => {
+    console.log("screen resized")
+    if (screen.width < 768) {
+      console.log("screen :" + screen.width + " - add class show to burger menu")
+      document.getElementById('action-wrap').classList.add('hide');
+      document.getElementById('burger-menu').classList.add('show');
+      document.getElementById('burger-menu').classList.remove('hide');
+    } else {
+      console.log("screen :" + screen.width + " - add class hide to burger menu")
+      document.getElementById('burger-menu').classList.add('hide');
+      document.getElementById('action-wrap').classList.remove('hide');
+      document.getElementById('action-wrap').classList.add('show');
+    };
+  });
 });

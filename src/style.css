@@ -47,11 +47,11 @@ body {
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .show {
-  display: "";
+  display: "" !important;
 }
 
 /* ================ section ================ */
@@ -144,6 +144,10 @@ body {
 
 /* x-small devices (phones, 600px and down) */
 @media only screen and (max-width: 414px) {
+  #burger-menu {
+    display: block;
+  }
+
   #navigation .nav-wrap {
     height: 90px;
     width: 100%;
@@ -198,6 +202,14 @@ body {
 
   #global img {
     display: none;
+  }
+}
+
+/* =================== tablet display ====== */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .action-wrap {
+    display: flex !important;
+    width: 60%;
   }
 }
 
@@ -423,7 +435,7 @@ body {
 }
 
 /* x-small devices (phones, 600px and down) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   .brand-container {
     width: 40%;
     height: 60%;
