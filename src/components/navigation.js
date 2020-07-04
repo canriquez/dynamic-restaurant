@@ -41,11 +41,6 @@ function renderNavigation() {
   document.getElementById('global').appendChild(navGlobal);
 
   renderNavCartItemNumber(2);
-  if (screen.width < 768) {
-    document.getElementById('action-wrap').classList.add('hide');
-  } else {
-    document.getElementById('burger-menu').classList.add('hide');
-  };
 }
 
 function clearNavigation() {
