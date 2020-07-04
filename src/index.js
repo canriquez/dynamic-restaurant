@@ -75,6 +75,7 @@ function home() {
 function menu() {
   clearAllSections();
   renderNavigation();
+  updateNavigationFunctions()
   addListeners();
   renderMenuSection();
   renderFooterSection();
@@ -83,6 +84,7 @@ function menu() {
 function cart() {
   clearAllSections();
   renderNavigation();
+  updateNavigationFunctions()
   addListeners();
   renderCartSection();
   renderFooterSection();
@@ -91,6 +93,7 @@ function cart() {
 function contact() {
   clearAllSections();
   renderNavigation();
+  updateNavigationFunctions()
   addListeners();
   renderContactSection();
   renderFooterSection();
