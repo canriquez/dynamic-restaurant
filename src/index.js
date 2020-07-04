@@ -43,8 +43,7 @@ function showMobileMenu() {
   document.getElementById('burger-menu').classList.add('hide');
   document.getElementById('x-mobile-menu').classList.remove('hide');
   document.getElementById('x-mobile-menu').classList.add('show');
-  return;
-};
+}
 
 function hideMobileMenu() {
   document.getElementById('action-wrap').classList.remove('show');
@@ -53,8 +52,7 @@ function hideMobileMenu() {
   document.getElementById('burger-menu').classList.add('show');
   document.getElementById('x-mobile-menu').classList.remove('show');
   document.getElementById('x-mobile-menu').classList.add('hide');
-  return;
-};
+}
 
 function home() {
   clearAllSections();
