@@ -15,6 +15,7 @@
 ## Built With
 
 - HTML/CSS, Javascript, Webpack, NPM, yarn.
+- ESlint, Stylelint
 - VSCode
 
 ## Live Demo
