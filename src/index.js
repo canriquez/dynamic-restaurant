@@ -27,10 +27,12 @@ import {
 function updateNavigationFunctions() {
   if (window.screen.width < 768) {
     document.getElementById('action-wrap').classList.add('hide');
+    document.getElementById('action-wrap').classList.remove('show');
     document.getElementById('burger-menu').classList.add('show');
     document.getElementById('burger-menu').classList.remove('hide');
   } else {
     document.getElementById('burger-menu').classList.add('hide');
+    document.getElementById('action-wrap').classList.remove('show');
     document.getElementById('action-wrap').classList.remove('hide');
     document.getElementById('action-wrap').classList.add('show');
   }
@@ -75,6 +77,7 @@ function home() {
 function menu() {
   clearAllSections();
   renderNavigation();
+  updateNavigationFunctions();
   addListeners();
   renderMenuSection();
   renderFooterSection();
@@ -83,6 +86,7 @@ function menu() {
 function cart() {
   clearAllSections();
   renderNavigation();
+  updateNavigationFunctions();
   addListeners();
   renderCartSection();
   renderFooterSection();
@@ -91,6 +95,7 @@ function cart() {
 function contact() {
   clearAllSections();
   renderNavigation();
+  updateNavigationFunctions();
   addListeners();
   renderContactSection();
   renderFooterSection();
