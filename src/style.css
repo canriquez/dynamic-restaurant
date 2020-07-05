@@ -337,7 +337,7 @@ body {
   left: 5%;
   transform: translateY(-50%);
   width: 30%;
-  height: 80%;
+
   background-color: rgba(255, 255, 255, 0.7);
   overflow: hidden;
 }
@@ -371,10 +371,13 @@ body {
   width: 100%;
   padding: 0 10px;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .action {
   padding: 0 10px;
+  margin: 10px 0 5px 0;
 }
 
 .action button {
@@ -397,6 +400,10 @@ body {
   font-size: 1.5vw;
   line-height: 1.8rem;
   color: #48453c;
+}
+
+#payment-tags {
+  margin: 10px 0;
 }
 
 /* x-small devices (phones, 600px and down) */
@@ -423,7 +430,7 @@ body {
 
   .brand-container {
     width: 90%;
-    height: 87%;
+    /* height: 87%; */
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.8);
   }
@@ -438,8 +445,7 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .brand-container {
     width: 40%;
-    height: 60%;
-    top: 35%;
+    top: 45%;
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.8);
   }
