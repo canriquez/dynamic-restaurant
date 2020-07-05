@@ -416,9 +416,10 @@ body {
   .brand-container .options {
     margin: 0;
   }
+
   .btn-opt {
     font-size: 0.8rem;
-    margin: 0px 0;
+    margin: 0 0;
   }
 
   .btn-action {
@@ -440,22 +441,22 @@ body {
   .brand-container .options p {
     font-size: 1rem;
   }
-
-  #payment-tags {
-  }
 }
 
 /* main */
+
 /* x-small devices (phones, 600px and down) */
 @media only screen and (min-width: 415px) and (max-width: 767px) {
   .brand-container {
     left: 50%;
-    transform: translateX(-50%) translatey(-50%);
+    transform: translateX(-50%) translateY(-50%);
     width: 300px;
+
     /* height: 87%; */
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.8);
   }
+
   .brand-container .brand-mission p,
   .brand-container .options p {
     font-size: 1.2rem;
@@ -463,6 +464,7 @@ body {
 }
 
 /* main */
+
 /* x-small devices (phones, 600px and down) */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .brand-container {
