@@ -337,7 +337,6 @@ body {
   left: 5%;
   transform: translateY(-50%);
   width: 30%;
-
   background-color: rgba(255, 255, 255, 0.7);
   overflow: hidden;
 }
@@ -430,6 +429,7 @@ body {
 
   .brand-container {
     width: 90%;
+
     /* height: 87%; */
     justify-content: space-around;
     background-color: rgba(255, 255, 255, 0.8);
@@ -724,11 +724,13 @@ body {
 /* ============ contact form ==== */
 
 form input {
-  height: 25px;
+  height: 50px;
   border-width: 1px;
   background-color: #f8f9fa;
   border: none;
   padding: 6px 8px;
+  font-family: futura-thin, sans-serif;
+  font-size: 1.1rem;
 }
 
 form textarea {
@@ -755,8 +757,7 @@ form button {
   justify-content: space-between;
   align-items: center;
   margin: 20px auto 40px auto;
-  width: 500px;
-  height: 400px;
+  width: 60vw;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -765,7 +766,7 @@ form button {
 #hero-form-image {
   position: relative;
   width: 100%;
-  height: 40%;
+  height: 200px;
 }
 
 #hero-form-image img {
@@ -792,16 +793,29 @@ form button {
   text-align: center;
 }
 
-.inputForm {
-  align-items: flex-start;
+.formCol {
+  width: 60%;
+  margin: 5px 0 15px 0;
 }
 
-.formCol {
-  margin: 5px 0 15px 0;
+form {
+  width: 100%;
+}
+
+.inputForm {
+  align-items: flex-start;
+  width: 100%;
 }
 
 .formRow {
   margin: 15px 0 10px 0;
+  justify-content: space-between;
+}
+
+.formRow div:nth-child(2) {
+  align-self: flex-end;
+  padding-right: 0;
+  width: 50%;
 }
 
 .inputForm label {
@@ -814,8 +828,11 @@ form button {
 
 .inputForm textarea {
   margin-bottom: 10px;
+  height: 150px;
   width: 100%;
 }
+
+/* Contact Form */
 
 /* x-small devices (phones, 600px and down) */
 @media only screen and (max-width: 414px) {
@@ -834,7 +851,7 @@ form button {
   }
 
   #contactForm .formRow {
-    width: 98%;
+    width: 100%;
     flex-wrap: wrap;
   }
 
@@ -847,6 +864,11 @@ form button {
   #contactForm input {
     width: 100%;
     height: 40px;
+  }
+
+  .formCol {
+    width: 95%;
+    margin: 5px 0 15px 0;
   }
 
   form div:nth-child(3) {
@@ -864,6 +886,16 @@ form button {
   form .btn {
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+/* contact form */
+
+/* small devices 760 up to 1200 */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .formCol {
+    width: 95%;
+    margin: 5px 0 15px 0;
   }
 }
 
