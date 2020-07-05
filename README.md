@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/canriquez/dynamic-restaurant/9adfe75e6f3333ef532be9631798bae711edf755/dist/index.html)
+[Live Demo Link](https://rawcdn.githack.com/canriquez/dynamic-restaurant/105e651cacb66ea1278b1a143603c746b2e909b9/dist/index.html)
 
 
 ## Getting Started
@@ -69,4 +69,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENCE) licensed.
+This project is [MIT](./LICENSE) licensed.
