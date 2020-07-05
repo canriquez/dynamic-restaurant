@@ -26,11 +26,15 @@ import {
 
 function updateNavigationFunctions() {
   if (window.screen.width < 768) {
+    console.log("mobile screen detected :" + window.screen.width)
     document.getElementById('action-wrap').classList.add('hide');
+    document.getElementById('action-wrap').classList.remove('show');
     document.getElementById('burger-menu').classList.add('show');
     document.getElementById('burger-menu').classList.remove('hide');
   } else {
+    console.log("tablet and bigger screen detected :" + window.screen.width)
     document.getElementById('burger-menu').classList.add('hide');
+    document.getElementById('action-wrap').classList.remove('show');
     document.getElementById('action-wrap').classList.remove('hide');
     document.getElementById('action-wrap').classList.add('show');
   }
